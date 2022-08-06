@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="portuguese-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>THERE´S THE SPIRIT</h1>
+    
+    <div class="main">
+        
+        <div class="right_login">
+            <div class="card_login">
+                
+                <h2>LOGIN</h2>
+                <div id="mensagem"></div>
+                <div class="textfield" id ='nm'>
+                    
+                    <div class="lbl"><label for="user" >Usuário</label></div>
+                    
+                    <input type="text" onkeyup="foco()" id="user"class="user">
+                    
+                </div>
+                
+                <div class="textfield" id="snh">
+                    <div class="lbl2"><label for="password">Senha</label></div>
+                    <input type="password" onkeyup="foco2()"  class="password"
+                    id="password" >
+                </div>
+                
+                <button type='submit' onclick="vazio()" class="btn-login">ENTRAR</button>
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+        <div class="left_login">
+            
+            <img src="astro.svg" alt="robo">
+        </div>
+        
+    </div>
+    <footer>
+        <div class="line-dec-v"></div>
+
+        <div class="footer">
+            <p>&copy; Desenvolvido por <a href="https://github.com/abrxao">Abraão <img src="logo.png" alt="github logo"></a></p>
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
