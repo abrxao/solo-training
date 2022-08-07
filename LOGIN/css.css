@@ -18,24 +18,16 @@ html{
     
 }
 
-@keyframes titulo{
-    0% { text-shadow: 0px 0px 20px #ffa2f3ff;}
-    50% { text-shadow: 0px 0px 50px #ffffff; }
-    100% { text-shadow: 0px 0px 20px #ffa2f3ff; }
-}
-
 .main{
-    width: 100vw;
-    height: 100vh;
-    max-height: 650px;
-    min-height: 500px;  
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0px 7%;
     margin: auto;
-    
 }
+
 .texture{
     width: 60vw;
 }
@@ -77,17 +69,21 @@ html{
 
 body h1{
     width: 100%;
+    margin:0;
     color: #4A407C;
     background-color: #F2BC79;
     font-size: 4rem;
     padding: 10px 20px;
     text-align: center;
+    position: fixed;
     box-shadow: 0px 0px 50px 8px #00000075;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 4px;
 }
+
 .left_login img{
-    width: 100%;    
-    margin-top: -4%;
-    max-height: 650px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .right_login{
@@ -96,15 +92,17 @@ body h1{
     justify-content: center;
     align-items: center;
     margin: auto; 
-    height: 100vh;
-    min-height: 300px;
+    height: 60vh;
     max-height: 500px;
     
 }
 
 .card_login{
     width: 90%;
-    max-width: 480px;
+    max-width: 400px;
+    height: 50vh;
+    max-height: 450px;
+    min-height: 380px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -114,7 +112,6 @@ body h1{
     border-radius: 30px;
     border-top-right-radius: 3px;
     box-shadow: 0px 10px 40px #00000048;
-    animation: titulo2 3s infinite;
 }
 
 
@@ -211,9 +208,24 @@ body h1{
     html{
         background-image: 90deg;
     }
+    .main{
+        margin-top: 20%;
+        display: block;
+    }
+    .right_login{
+        width: 100%;
+    }
+    .left_login{
+        width: 100%;
+        max-height: 400px;
+    }
+    .left_login img{
+        max-width: 450px;
+        margin-top: 4%;
+    }
+
     .card_login{
-        width: 92%;
-        margin-top: 75px; 
+        width: 92%; 
     }
     body h1{
         font-size: 2rem;
@@ -232,12 +244,10 @@ body h1{
     
     .right_login{
         width: 100%;
-        height: auto;
     }
     
     .left_login{
         width: 100%;
-        height: auto;
     }
     .left_login img{
         display: none;
@@ -247,7 +257,7 @@ body h1{
     }
 }
 
-@media  (max-width: 340px){
+@media  (max-width: 356px){
     body h1{
         font-size: 1.4rem;
     }
