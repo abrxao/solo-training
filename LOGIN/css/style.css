@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;800&display=swap');
+
+body{ 
+    font-family: 'Outfit', sans-serif;
+    margin: 0;    
+    background-image: linear-gradient(130deg, #6F88C8d0, #4A407Cd0 );
+    overflow: hidden;
+    height: 100vh;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(../assets/textura.jpg);
+    overflow-x: hidden;
+}
+
+.main{
+    width: 75%;
+    min-width: 700px;
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    margin: 17vh auto;
+}
+
+.texture{
+    width: 60vw;
+}
+
+.left_login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    height: 50px;    
+    background-color: #2e2e2e;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+}
+
+.footer a{
+    color:#F2BC79;
+    text-decoration: none;
+}
+
+.footer img{
+    width: 13px;
+    margin-left: 3px;
+    margin-bottom: -2px;
+}
+
+body h1{
+    width: 100%;
+    margin:0;
+    color: #4A407C;
+    background-color: #F2BC79;
+    font-size: 4rem;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0px 0px 50px 8px #00000075;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+}
+
+.left_login img{
+    width: 100%;
+    max-width: 700px;
+}
+
+.right_login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    max-height: 500px;
+    
+}
+
+.card_login{
+    width: 90%;
+    max-width: 400px;
+    height: 50vh;
+    max-height: 450px;
+    min-height: 420px;
+    gap:10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #3f3f3f;
+    border-radius: 30px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 15px 30px #ffffff11;
+}
+
+.card_login h2{
+    color: #F2BC79;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    position: relative;
+}
+
+.textfield  input{    
+    width: 100%;
+    border: 1px double #F2BC79af;
+    border-radius: 10px;
+    padding: 18px;
+    background: #ffffff00;
+    outline: none;
+    box-sizing: border-box;
+    color: #fff;
+    transition: 0.4s;
+    margin-bottom: 8px;
+}
+
+.textfield input:hover,.textfield input:focus
+{
+    border: 1px double #F2BC79;
+
+}
+
+.textfield  span{   
+    color: #fff;
+    pointer-events: none;
+    font-size: 12pt; 
+    opacity: 0.5;
+    position: absolute;
+    padding: 15px;
+    padding-left: 12px;
+    left: 0;
+    transition: 0.5s;
+    
+}
+
+.textfield input:valid ~ span,
+.textfield input:focus ~ span{
+    opacity: 1;
+    color: #f2f2f2;
+    transform: translateY(-10px) translateX(15px);
+    background-color: #3f3f3f;
+    border-left: 1px solid #F2BC79;
+    border-right: 1px solid #F2BC79;
+    font-size: 10pt; 
+    padding: 0px 6px;
+}
+
+.tec-use{
+    background-color: #F2856D;
+    color: #f2f2f2;
+    border-radius: 15px;
+    text-decoration: none;
+    position: fixed;
+    right: 0;
+    margin-right: 18px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    background-color: #ffffff35;
+    z-index: 1;
+}
+
+.modal:target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body{
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: #f2f2f2;
+    width: 400px;
+    position: relative;
+}
+
+.modal-body a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    right: 10px;
+    margin-top: -8px;
+}
+
+.main .help{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.main .help a{
+    color: #F2EC9B;
+    text-decoration: none;
+}
+.main .help a:hover{
+    color: #F2856D;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-weight: 800;
+    cursor: pointer;
+    color: #fff;
+    
+    transform: scale(1);
+    transition: transform 0.7s ease-in-out ;
+    background: #F2856D;
+    letter-spacing: 3px;
+}
+.btn-login:hover{
+    color: #555;
+    background-color: #F2EC9B;
+    animation: piska 1.5s infinite;
+}
+
+
+@keyframes lines {
+        100% {
+            background-position: 250% 0px;
+        }
+  }
+
+.line-dec-v{
+    height: 5px;
+    width: 100%;
+    bottom: 50px;
+    position: fixed;
+    background-image: linear-gradient(90deg, #F2EC9B,#F2BC79,#F2856D,#F2EC9B,#F2BC79,#F2856D,#F2BC79,#F2EC9B);
+    background-size:250% 100%;
+    background-position: 0px 0px;
+    animation: lines 4s linear infinite;
+
+}
+
+@media (max-width: 992px){
+    html{
+        background-image: 90deg;
+    }
+    .right_login{
+        width: 100%;
+    }
+    .left_login{
+        width: 100%;
+        max-height: 400px;
+    }
+    .left_login img{
+        max-width: 450px;
+        margin-top: 4%;
+    }
+
+    .card_login{
+        width: 92%; 
+    }
+    body h1{
+        font-size: 2.2rem;
+    }
+    .main{
+        padding: 0;
+    }
+    
+}
+
+@media  (max-width: 768px){
+    .main{
+        background-color: #ffffff00;
+        width: 100%;
+        flex-direction: column;
+        display: block;
+        height: 100vh;
+        margin: 0;
+        min-width: 2px;
+    }
+    body h1{
+        font-size: 1.7rem;
+    }
+    .right_login{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        max-height: 100vh;
+        max-width: 100%;
+    }
+    
+    .left_login{
+        width: 100%;
+    }
+    .left_login img{
+        display: none;
+        margin:0;
+        padding:0;
+    }
+    .card_login{
+        
+        width: 100%;
+        height: 100vh;
+        min-height: 0%;
+        padding: 18vh 12vw;
+        margin: 20%;
+        
+    }
+}
+
+@media  (max-width: 450px){
+    body h1{
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+    }
+    .card_login{
+        margin: 0;
+    }
+}
+
+@media (max-width:300px){
+    .card_login{
+        min-height: 370px;
+    }
+
+    .right_login a{
+        
+        font-size: .9rem;
+    }
+}
+
+.erro{
+    background-color: #fff;
+}
+
+.mensagem{
+    width: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #F2856D;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+.mensagem2 {
+    width: 100%;
+    margin: 10px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    font-weight: 800;
+    color: #b2fc3c;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
