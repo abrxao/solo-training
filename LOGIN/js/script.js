@@ -15,7 +15,7 @@ function vazio() {
     
     if(login.value=="" || senha.value==""){
 
-        msg.innerHTML = 'VERIFIQUE OS CAMPOS';
+        msg.innerHTML = 'Verifique os campos vazios';
         msg.classList.add('mensagem');
         return true;
 
@@ -44,7 +44,7 @@ function vazio() {
                 },1000)
         }                
         else{
-            msg.innerHTML = 'ERRO NO LOGIN OU SENHA';
+            msg.innerHTML = 'Erro no login ou senha';
                 msg.classList.add('mensagem');
                    
         }
@@ -56,6 +56,17 @@ const modal = document.querySelector('.modal');
 
 modal.addEventListener('click', (e) => {
     if(e.target===modal){window.location.href = "";}
+});
+
+const olho = document.querySelector('.pass-eye');
+
+olho.addEventListener('click', (e) => {
+    if(senha.getAttribute('type')=='password'){
+        senha.setAttribute('type','text')
+    }else{
+        senha.setAttribute('type','password')
+    }
+    
 });
 
 
