@@ -6,6 +6,8 @@ body{
     background-image: linear-gradient(130deg, #6F88C8d0, #4A407Cd0 );
     overflow: hidden;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body *{
@@ -24,8 +26,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3%;
-    margin: 17vh auto;
+    margin: auto;
 }
 
 .texture{
@@ -47,7 +48,7 @@ html{
     margin: auto;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom:0;
 }
 
@@ -70,7 +71,6 @@ body h1{
     font-size: 4rem;
     padding: 10px 20px;
     text-align: center;
-    position: fixed;
     box-shadow: 0px 0px 50px 8px #00000075;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
@@ -172,10 +172,13 @@ body h1{
     text-decoration: none;
     position: fixed;
     right: 0;
-    margin-right: 18px;
+    top: 22vh;
+    margin-right: 20px;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     cursor: pointer;
+    z-index: 1;
+    animation: btn 2s infinite cubic-bezier(0.32, 1.38, 1,-0.42);
 }
 
 .modal{
@@ -199,6 +202,7 @@ body h1{
     color: #f2f2f2;
     width: 400px;
     position: relative;
+    margin: auto 2%;
 }
 
 .modal-body a{
@@ -252,6 +256,12 @@ body h1{
         }
   }
 
+@keyframes btn{
+    50%{
+        margin-right: 5px;
+    }
+}
+
 .line-dec-v{
     height: 5px;
     width: 100%;
@@ -264,7 +274,7 @@ body h1{
 
 }
 
-@media (max-width: 992px){
+@media (max-width: 1024px){
     html{
         background-image: 90deg;
     }
@@ -287,36 +297,35 @@ body h1{
         font-size: 2.2rem;
     }
     .main{
+        margin: 10% auto ;
         padding: 0;
     }
     
 }
-
-@media  (max-width: 767px){
+@media(max-width:992px){
+    .main{
+        flex-direction: column;
+    }
+}
+@media  (max-width: 768px){
     .main{
         background-color: #ffffff00;
         width: 100%;
         flex-direction: column;
         display: block;
-        height: 100vh;
-        margin: 0;
+        margin: auto;
         min-width: 2px;
     }
     body h1{
         font-size: 1.7rem;
     }
     .right_login{
-        padding: 0;
-        margin: 0;
         height: 100vh;
         width: 100%;
-        max-height: 100vh;
-        max-width: 100%;
+        max-width: 98%;
+        margin: auto;
     }
     
-    .left_login{
-        width: 100%;
-    }
     .left_login img{
         display: none;
         margin:0;
@@ -327,13 +336,13 @@ body h1{
         width: 100%;
         height: 100vh;
         min-height: 0%;
-        padding: 18vh 12vw;
         margin: 20%;
         
     }
 }
 
-@media  (max-width: 450px){
+@media  (max-width: 520px){
+    
     body h1{
         font-size: 1.3rem;
         letter-spacing: 4px;
@@ -346,6 +355,7 @@ body h1{
 @media (max-width:300px){
     .card_login{
         min-height: 370px;
+        padding: 10px 10px;
     }
 
     .right_login a{

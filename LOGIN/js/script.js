@@ -27,7 +27,7 @@ function vazio() {
     for(var i=0; i < logs.length; i++) {
 
         if(login.value==logs[i] && senha.value==senhas[i]){
-                var t= 7;
+                var t= 3;
                 snh.style.display = "none";
                 nm.style.display = "none";
                 btn.style.display="none";
