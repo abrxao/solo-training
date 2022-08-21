@@ -1,7 +1,7 @@
 const btn = document.querySelector('.btn-login');
 
-const senhas = ['07031964', '1234','123'];
-const logs = ['lorena','b','c'];
+const senhas = ['12345', '1234','123'];
+const logs = ['a','b','c'];
 
 const login = document.querySelector("#user");
 const senha = document.querySelector("#password");
@@ -55,7 +55,7 @@ function vazio() {
 const modal = document.querySelector('.modal');
 
 modal.addEventListener('click', (e) => {
-    if(e.target===this){ this.style.display = "none";};
+    if(e.target===modal){window.location.href = "";}
 });
 
 

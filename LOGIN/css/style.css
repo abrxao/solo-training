@@ -183,7 +183,7 @@ body h1{
     height: 100vh;
     display: none;
     position: absolute;
-    background-color: #ffffff35;
+    background-color: #ffffff12;
     z-index: 1;
 }
 
@@ -292,7 +292,7 @@ body h1{
     
 }
 
-@media  (max-width: 768px){
+@media  (max-width: 767px){
     .main{
         background-color: #ffffff00;
         width: 100%;
